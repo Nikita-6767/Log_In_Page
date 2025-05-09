@@ -1,0 +1,61 @@
+.questions {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .questions h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .questionList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .questionCard {
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .questionCard h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+  
+  .questionCard p {
+    font-size: 1rem;
+  }
+  
+  .questionCard .learnButton {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+  
+  .questionCard .learnButton:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .easy {
+    background-color: #22c55e;
+  }
+  
+  .medium {
+    background-color: #eab308;
+  }
+  
+  .hard {
+    background-color: #ef4444;
+  }
+  

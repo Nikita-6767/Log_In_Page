@@ -1,0 +1,49 @@
+.events {
+    padding: 60px 40px;
+    background-color: #f9fafb;
+    text-align: center;
+  }
+  
+  .events h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .eventList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .eventCard {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .eventCard h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .eventCard p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .eventCard .viewButton {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  
+  .eventCard .viewButton:hover {
+    background-color: #1d4ed8;
+  }
+  

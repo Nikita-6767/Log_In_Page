@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import basestyle from "../Base.module.css";
 import loginstyle from "./Login.module.css";
-import axios from "axios";
 import { useNavigate, NavLink } from "react-router-dom";
+
 const Login = ({ setUserState }) => {
   const navigate = useNavigate();
   const [formErrors, setFormErrors] = useState({});
@@ -19,6 +19,7 @@ const Login = ({ setUserState }) => {
       [name]: value,
     });
   };
+
   const validateForm = (values) => {
     const error = {};
     const regex = /^[^\s+@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -52,28 +53,18 @@ const Login = ({ setUserState }) => {
 
         if (response.ok) {
           alert("Login successful!");
-          setUserState(data.user);
-          navigate("/", { replace: true });
+          setUserState(data.user);  // Save user data to state
+          navigate("/home", { replace: true });  // Redirect to Home page
         } else {
-          setError("Invalid email or password.");
+          setFormErrors({ ...formErrors, general: "Invalid email or password." });
         }
       } catch (error) {
         console.error("Login error:", error);
-        setError("Something went wrong. Please try again later.");
+        setFormErrors({ ...formErrors, general: "Something went wrong. Please try again later." });
       }
     }
   };
 
-  useEffect(() => {
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(user);
-      axios.post("http://localhost:9002/login", user).then((res) => {
-        alert(res.data.message);
-        setUserState(res.data.user);
-        navigate("/", { replace: true });
-      });
-    }
-  }, [formErrors]);
   return (
     <div className={loginstyle.login}>
       <form>
@@ -96,6 +87,10 @@ const Login = ({ setUserState }) => {
           value={user.password}
         />
         <p className={basestyle.error}>{formErrors.password}</p>
+
+        {/* Display general error messages */}
+        {formErrors.general && <p className={basestyle.error}>{formErrors.general}</p>}
+
         <button className={basestyle.button_common} onClick={loginHandler}>
           Login
         </button>
@@ -104,4 +99,5 @@ const Login = ({ setUserState }) => {
     </div>
   );
 };
+
 export default Login;

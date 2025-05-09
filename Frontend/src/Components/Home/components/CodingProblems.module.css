@@ -1,0 +1,61 @@
+.problems {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .problems h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .problemList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .problemCard {
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .problemCard h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+  
+  .problemCard p {
+    font-size: 1rem;
+  }
+  
+  .problemCard .startButton {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+  
+  .problemCard .startButton:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .easy {
+    background-color: #22c55e;
+  }
+  
+  .medium {
+    background-color: #eab308;
+  }
+  
+  .hard {
+    background-color: #ef4444;
+  }
+  

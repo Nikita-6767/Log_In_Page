@@ -1,0 +1,40 @@
+.companies {
+    padding: 60px 40px;
+    background-color: #f9fafb;
+    text-align: center;
+  }
+  
+  .companies h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 40px;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+  }
+  
+  .companyList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .companyName {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #0f172a;
+    background-color: #ffffff;
+    padding: 16px 32px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .companyName:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f1f5f9;
+  }
+  

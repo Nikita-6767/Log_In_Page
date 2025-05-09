@@ -1,0 +1,55 @@
+.challenges {
+    padding: 60px 40px;
+    background-color: #ffffff;
+  }
+  
+  .challenges h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .problem {
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .problem h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  
+  .problem span {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .easy {
+    background-color: #22c55e;
+  }
+  
+  .medium {
+    background-color: #eab308;
+  }
+  
+  .hard {
+    background-color: #ef4444;
+  }
+  

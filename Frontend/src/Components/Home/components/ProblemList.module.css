@@ -1,0 +1,35 @@
+.container {
+    padding: 40px 20px;
+  }
+  
+  .container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8fafc;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  
+  .easy {
+    color: green;
+  }
+  
+  .medium {
+    color: orange;
+  }
+  
+  .hard {
+    color: red;
+  }
+  
